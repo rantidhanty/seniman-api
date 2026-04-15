@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:items-center lg:min-h-[calc(100vh-5rem)]">
           {/* Left */}
-          <div className="text-white pb-8 lg:py-0">
+          <div className="text-white pt-6 pb-8 lg:py-0">
             <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 rounded-full px-4 py-1.5 text-orange-300 text-sm font-medium mb-3 sm:mb-6">
               <span className="animate-pulse">🔥</span>
               <span>Terpercaya Sejak 2010</span>
