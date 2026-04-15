@@ -31,51 +31,65 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:items-center lg:min-h-[calc(100vh-5rem)]">
           {/* Left */}
-          <div className="text-white pt-6 pb-8 lg:py-0">
-            <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 rounded-full px-4 py-1.5 text-orange-300 text-sm font-medium mb-3 sm:mb-6">
-              <span className="animate-pulse">🔥</span>
-              <span>Terpercaya Sejak 2010</span>
+          <div className="text-white flex flex-col justify-between min-h-[calc(100dvh-80px)] pt-6 pb-6 lg:block lg:min-h-0 lg:py-0">
+            {/* Top: badge + heading + paragraph */}
+            <div>
+              <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 rounded-full px-4 py-1.5 text-orange-300 text-sm font-medium mb-4 sm:mb-6">
+                <span className="animate-pulse">🔥</span>
+                <span>Terpercaya Sejak 2010</span>
+              </div>
+
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black leading-tight mb-4 sm:mb-6">
+                Ahli Las
+                <br />
+                <span className="gradient-text">Berpengalaman</span>
+                <br />
+                &amp; Terpercaya
+              </h1>
+
+              <p className="text-gray-300 text-sm sm:text-lg leading-relaxed max-w-xl">
+                Solusi pengelasan profesional pagar minimalis, railing tangga
+                elegan, kanopi kokoh, hingga konstruksi besi custom. Kualitas
+                premium, harga bersahabat.
+              </p>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black leading-tight mb-3 sm:mb-6">
-              Ahli Las
-              <br />
-              <span className="gradient-text">Berpengalaman</span>
-              <br />
-              &amp; Terpercaya
-            </h1>
+            {/* Bottom: buttons + stats + arrow */}
+            <div>
+              <div className="flex flex-row gap-2 sm:gap-4 mb-5 sm:mb-12 mt-5 sm:mt-8">
+                <a
+                  href="#layanan"
+                  className="inline-flex items-center justify-center gap-1.5 bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 sm:px-8 py-2.5 sm:py-4 rounded-full text-sm sm:text-base transition-all shadow-xl hover:-translate-y-1 flex-1 sm:flex-none"
+                >
+                  🔥 Lihat Layanan
+                </a>
+                <a
+                  href="#portofolio"
+                  className="inline-flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-4 sm:px-8 py-2.5 sm:py-4 rounded-full text-sm sm:text-base transition-all backdrop-blur-sm hover:-translate-y-1 flex-1 sm:flex-none"
+                >
+                  📸 Portofolio
+                </a>
+              </div>
 
-            <p className="text-gray-300 text-sm sm:text-lg leading-relaxed mb-4 sm:mb-8 max-w-xl">
-              Solusi pengelasan profesional pagar minimalis, railing tangga
-              elegan, kanopi kokoh, hingga konstruksi besi custom. Kualitas
-              premium, harga bersahabat.
-            </p>
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8 border-t border-white/10 mb-5 sm:mb-0">
+                {stats.map((s) => (
+                  <div key={s.label}>
+                    <div className="text-xl sm:text-3xl font-black text-orange-400">
+                      {s.value}
+                    </div>
+                    <div className="text-gray-400 text-xs sm:text-sm mt-0.5">{s.label}</div>
+                  </div>
+                ))}
+              </div>
 
-            <div className="flex flex-row gap-2 sm:gap-4 mb-5 sm:mb-12">
+              {/* Arrow mobile inline */}
               <a
                 href="#layanan"
-                className="inline-flex items-center justify-center gap-1.5 bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 sm:px-8 py-2.5 sm:py-4 rounded-full text-sm sm:text-base transition-all shadow-xl hover:-translate-y-1 flex-1 sm:flex-none"
+                className="flex lg:hidden justify-center text-white/50 hover:text-white transition-colors animate-bounce mt-2"
               >
-                🔥 Lihat Layanan
+                <ChevronDown className="w-7 h-7" />
               </a>
-              <a
-                href="#portofolio"
-                className="inline-flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-4 sm:px-8 py-2.5 sm:py-4 rounded-full text-sm sm:text-base transition-all backdrop-blur-sm hover:-translate-y-1 flex-1 sm:flex-none"
-              >
-                📸 Portofolio
-              </a>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8 border-t border-white/10">
-              {stats.map((s) => (
-                <div key={s.label}>
-                  <div className="text-xl sm:text-3xl font-black text-orange-400">
-                    {s.value}
-                  </div>
-                  <div className="text-gray-400 text-xs sm:text-sm mt-0.5">{s.label}</div>
-                </div>
-              ))}
             </div>
           </div>
 
@@ -116,7 +130,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <a
         href="#layanan"
-        className="absolute bottom-14 left-1/2 -translate-x-1/2 z-10 text-white/50 hover:text-white transition-colors animate-bounce"
+        className="hidden lg:flex absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-white/50 hover:text-white transition-colors animate-bounce"
       >
         <ChevronDown className="w-8 h-8" />
       </a>
