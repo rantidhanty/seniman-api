@@ -37,7 +37,7 @@ export default function Hero() {
               <span>Terpercaya Sejak 2010</span>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6">
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
               Ahli Las
               <br />
               <span className="gradient-text">Berpengalaman</span>
@@ -46,21 +46,21 @@ export default function Hero() {
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">
-              Solusi pengelasan profesional — pagar minimalis, railing tangga
+              Solusi pengelasan profesional pagar minimalis, railing tangga
               elegan, kanopi kokoh, hingga konstruksi besi custom. Kualitas
               premium, harga bersahabat.
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
                 href="#layanan"
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full text-base transition-all shadow-xl hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full text-base transition-all shadow-xl hover:-translate-y-1 w-full sm:w-auto"
               >
                 🔥 Lihat Layanan
               </a>
               <a
                 href="#portofolio"
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-full text-base transition-all backdrop-blur-sm hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-full text-base transition-all backdrop-blur-sm hover:-translate-y-1 w-full sm:w-auto"
               >
                 📸 Portofolio
               </a>
