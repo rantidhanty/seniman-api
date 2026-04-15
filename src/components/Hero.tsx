@@ -116,7 +116,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <a
         href="#layanan"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/50 hover:text-white transition-colors animate-bounce"
+        className="absolute bottom-14 left-1/2 -translate-x-1/2 z-10 text-white/50 hover:text-white transition-colors animate-bounce"
       >
         <ChevronDown className="w-8 h-8" />
       </a>
