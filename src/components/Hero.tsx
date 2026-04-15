@@ -31,13 +31,13 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-5rem)]">
           {/* Left */}
-          <div className="text-white py-20 lg:py-0">
-            <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 rounded-full px-4 py-1.5 text-orange-300 text-sm font-medium mb-6">
+          <div className="text-white py-8 lg:py-0">
+            <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 rounded-full px-4 py-1.5 text-orange-300 text-sm font-medium mb-3 sm:mb-6">
               <span className="animate-pulse">🔥</span>
               <span>Terpercaya Sejak 2010</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black leading-tight mb-3 sm:mb-6">
               Ahli Las
               <br />
               <span className="gradient-text">Berpengalaman</span>
@@ -45,35 +45,35 @@ export default function Hero() {
               &amp; Terpercaya
             </h1>
 
-            <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-gray-300 text-sm sm:text-lg leading-relaxed mb-4 sm:mb-8 max-w-xl">
               Solusi pengelasan profesional pagar minimalis, railing tangga
               elegan, kanopi kokoh, hingga konstruksi besi custom. Kualitas
               premium, harga bersahabat.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-row gap-2 sm:gap-4 mb-5 sm:mb-12">
               <a
                 href="#layanan"
-                className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full text-base transition-all shadow-xl hover:-translate-y-1 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-1.5 bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 sm:px-8 py-2.5 sm:py-4 rounded-full text-sm sm:text-base transition-all shadow-xl hover:-translate-y-1 flex-1 sm:flex-none"
               >
                 🔥 Lihat Layanan
               </a>
               <a
                 href="#portofolio"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-full text-base transition-all backdrop-blur-sm hover:-translate-y-1 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-4 sm:px-8 py-2.5 sm:py-4 rounded-full text-sm sm:text-base transition-all backdrop-blur-sm hover:-translate-y-1 flex-1 sm:flex-none"
               >
                 📸 Portofolio
               </a>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8 border-t border-white/10">
               {stats.map((s) => (
                 <div key={s.label}>
-                  <div className="text-3xl font-black text-orange-400">
+                  <div className="text-xl sm:text-3xl font-black text-orange-400">
                     {s.value}
                   </div>
-                  <div className="text-gray-400 text-sm mt-0.5">{s.label}</div>
+                  <div className="text-gray-400 text-xs sm:text-sm mt-0.5">{s.label}</div>
                 </div>
               ))}
             </div>
