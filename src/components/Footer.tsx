@@ -98,11 +98,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm">
-          <p>&copy; {new Date().getFullYear()} Seniman Api. Semua hak dilindungi.</p>
           <p>
-            Dibuat dengan{" "}
-            <span className="text-orange-500">♥</span> oleh Tim Seniman Api
+            &copy; {new Date().getFullYear()} Seniman Api. Semua hak dilindungi.
           </p>
+          <p>Dibuat dengan Tim Pro Fabric Steel</p>
         </div>
       </div>
     </footer>
